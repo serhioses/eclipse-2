@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "uglifyjs-webpack-plugin": "^0.3.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "description": "Eclipse is a small JavaScript library with different auxiliary functions. Principally, it's used by eclipse-ui library which provides UI interactions such as Dropdown, Tabs etc. But some functions can be useful without eclipse-ui.",
+  "keywords": [
+    "eclipse"
+  ],
+  "license": "MIT",
+  "main": "./dist/eclipse.js",
+  "name": "eclipse",
+  "repository": {},
+  "scripts": {},
+  "version": "2.0.0",
+  "author": "Serhiy Miroshnik"
+}
