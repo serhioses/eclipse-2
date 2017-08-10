@@ -48,7 +48,7 @@ describe('Color', () => {
         expect(eclipse.color.isRGBLike('rgba105,100,215)').value).toBe(false);
         expect(eclipse.color.isRGBLike('rgb(105,-2,215)').value).toBe(false);
         expect(eclipse.color.isRGBLike('rgb(105,2,&)').value).toBe(false);
-        expect(eclipse.color.isRGBLike('rgb(105 ,2,0)').value).toBe(false);
+        expect(eclipse.color.isRGBLike('rgb(105 ,2,0)').value).toEqual(['105', '2', '0']);
         expect(eclipse.color.isRGBLike('rgb(105,2p,0)').value).toBe(false);
         expect(eclipse.color.isRGBLike('rgb( 15,2,0)').value).toEqual(['15', '2', '0']);
         expect(eclipse.color.isRGBLike('rgb(15,2, 0)').value).toEqual(['15', '2', '0']);
