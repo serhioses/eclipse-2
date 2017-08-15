@@ -8,23 +8,23 @@ import DOM from './lib/DOM';
 import utils from './lib/utils';
 
 var eclipse = {
-    globals: {},
-    storage: {
-        dropdowns: [],
-        bundles: [],
-        spinners: [],
-        staticTabs: [],
-        adaptiveTabs: [],
-        searches: [],
-        cache: {}
-    },
-    helpers,
-    styles,
-    color,
-    decorators,
-    DOM,
-    utils, 
-    modules: {}
+  globals: {},
+  storage: {
+    dropdowns: [],
+    bundles: [],
+    spinners: [],
+    staticTabs: [],
+    adaptiveTabs: [],
+    searches: [],
+    cache: {}
+  },
+  helpers,
+  styles,
+  color,
+  decorators,
+  DOM,
+  utils, 
+  modules: {}
 };
 
 eclipse.utils.addMethod = eclipse.utils.addMethod.bind(eclipse);

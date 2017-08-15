@@ -23,8 +23,7 @@ describe('Utils', () => {
 
 describe('Color', () => {
     it('should return valid color', () => {
-        var newColor1 = eclipse.color.lighten('transparent', 10),
-            newColor2 = eclipse.color.darken('rgba');
+        var newColor1 = eclipse.color.change('transparent', 10, 'lighten');
 
         expect(newColor1).toBeString();
         expect(newColor1).toStartWith('rgb(');

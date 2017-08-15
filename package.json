@@ -9,14 +9,17 @@
   "dependencies": {
     "jquery": "^3.1.1"
   },
-  "description": "Eclipse is a small JavaScript library with different auxiliary functions. Principally, it's used by eclipse-ui library which provides UI interactions such as Dropdown, Tabs etc. But some functions can be useful without eclipse-ui.",
+  "description": "Eclipse is a small JavaScript library with different auxiliary functions. Principally, it's used by eclipse-ui and eclipse-validation libraries. But some functions can be useful without eclipse-ui and eclipse-validation.",
   "keywords": [
     "eclipse"
   ],
   "license": "MIT",
   "main": "./dist/eclipse.js",
   "name": "eclipse",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhioses/eclipse-2.git"
+  },
   "scripts": {},
   "version": "2.0.0",
   "author": "Serhiy Miroshnik"
