@@ -3,9 +3,11 @@ const webpack = require('webpack'),
   path = require('path'),
   isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
-
 var config = [{
-  entry: path.resolve(__dirname, './eclipse.js'),
+  entry: {
+    eclipse: path.resolve(__dirname, './eclipse.js'),
+    'eclipse.min': path.resolve(__dirname, './eclipse.js')
+  },
   externals: {
     jquery: {
       commonjs: 'jquery',
@@ -17,7 +19,7 @@ var config = [{
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'eclipse.js',
+    filename: '[name].js',
     library: 'eclipse',
     libraryTarget: 'umd',
     umdNamedDefine: false
@@ -27,6 +29,13 @@ var config = [{
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
+    new UglifyJSPlugin({
+      compress: {
+        warnings: false,
+        unsafe: true
+      },
+      include: /\.min\.js$/
+    })
   ],
   module: {
     rules: [
