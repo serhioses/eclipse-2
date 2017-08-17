@@ -14,7 +14,7 @@ var eclipse = {
     bundles: [],
     spinners: [],
     staticTabs: [],
-    adaptiveTabs: [],
+    responsiveTabs: [],
     searches: [],
     cache: {}
   },
