@@ -1,5 +1,48 @@
 'use strict';
 
+// var obj1, obj2, obj3, obj4;
+
+//   obj1 = {
+//     oranges: 1,
+//     apples: 7,
+//     bananas: 4,
+//     tomatoes: 9,
+//     set: {
+//       pens: 8,
+//       pencils: 10
+//     },
+//     tools: {
+//       bags: 17,
+//       electrical: {
+//         punchers: 1
+//       }
+//     }
+//   };
+//   obj2 = {
+//     cucumbers: 5,
+//     oranges: 2,
+//     lemons: 8,
+//     potatoes: 11,
+//     tomatoes: 15
+//   };
+//   obj3 = {
+//     cucumbers: 14,
+//     set: {
+//       pens: 6
+//     },
+//     tools: {
+//       boxes: 28,
+//       mechanical: {
+//         screwdrivers: 1
+//       }
+//     }
+//   };
+//   obj4 = {
+//     strawberries: 41
+//   };
+
+// console.log(eclipse.helpers.extend(true, obj1, obj2, obj3, obj4));
+
 describe('Utils', () => {
     it('should create namespace', () => {
         eclipse.utils.namespace('testNS');
@@ -259,8 +302,8 @@ describe('Helpers', () => {
     });
 
     it('should return an absolute url', () => {
-        expect(eclipse.helpers.getAbsoluteUrl()).toEqual('http://eclipse.loc/');
-        expect(eclipse.helpers.getAbsoluteUrl('a')).toEqual('http://eclipse.loc/a');
+        expect(eclipse.helpers.getAbsoluteUrl()).toEqual('http://eclipse-2.loc/');
+        expect(eclipse.helpers.getAbsoluteUrl('a')).toEqual('http://eclipse-2.loc/a');
     });
 
     it('should return proper forms of the given words in dependence of the given quantity', () => {
